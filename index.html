@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-[#fafafa]">
+    <!-- Main Body -->
+    <main
+      class="lg:h-[800px] max-w-screen-xl mx-auto my-10 grid md:grid-cols-3 lg:grid-cols-3 justify-items-center place-content-center gap-10"
+    >
+      <!-- Card 1 -->
+      <a
+        data-aos="fade-up-right"
+        href="figures.html"
+        class="h-[400px] w-full max-w-sm bg-[#E8D574] border border-[#231F20] rounded-lg shadow hover:shadow-xl transition-shadow"
+      >
+        <div
+          class="h-full flex flex-col justify-center items-center text-center"
+        >
+          <img
+            class="w-24 h-24 mb-3 rounded-full shadow-lg bg-[#fafafa] border border-[#231F20]"
+            src="./images/image2.png"
+            alt="Figure Icon"
+          />
+          <h1 class="m-5 text-2xl font-medium text-[#231F20]">
+            Historical Figures
+          </h1>
+          <div class="flex mt-4 md:mt-6"></div>
+        </div>
+      </a>
+      <!-- Image 1 -->
+      <img src="./images/image1.png" alt="Image1" />
+      <!-- Card 2 -->
+      <a
+        data-aos="fade-up-left"
+        href="key_events.html"
+        class="h-[400px] w-full max-w-sm bg-[#E8D574] border border-[#231F20] rounded-lg shadow hover:shadow-xl transition-shadow"
+      >
+        <div
+          class="h-full flex flex-col justify-center items-center text-center"
+        >
+          <img
+            class="w-24 h-24 mb-3 rounded-full shadow-lg bg-[#fafafa] border border-[#231F20]"
+            src="./images/image3.png"
+            alt="Star Icon"
+          />
+          <h1 class="m-5 text-2xl font-medium text-[#231F20]">Key Events</h1>
+          <div class="flex mt-4 md:mt-6"></div>
+        </div>
+      </a>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="max-w-screen-2xl mx-auto align-center m-4 bg-white rounded-lg border border-[#231F20] shadow dark:bg-gray-800"
+    >
+      <div
+        class="w-full max-w-screen-xl p-4 mx-auto md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024
+          <a href="https://flowbite.com/" class="hover:underline"
+            >Kat Jerng Squad™</a
+          >. All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Flowbite Script -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

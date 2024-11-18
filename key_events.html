@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Events</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="icon" href="./images/logo.png" />
+    <style>
+      /* Adding necessary custom styles for the flip effect */
+      .perspective {
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        transform-style: preserve-3d;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        backface-visibility: hidden;
+        position: absolute;
+        inset: 0;
+        transform-origin: center;
+      }
+
+      .flip-card-back {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body class="max-w-screen-2xl mx-auto">
+    <!-- Back Button -->
+    <nav class="m-10">
+      <a
+        href="index.html"
+        class="border border-[#231F20] focus:outline-none text-[#231F20] bg-[#E8D574] hover:bg-[#d7a329] focus:ring-4 focus:ring-[#dfbe40] font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-[#6a3f1d]"
+      >
+        &lt; Back
+      </a>
+    </nav>
+    <main
+      class="max-w-screen-xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10 m-10"
+    >
+      <!-- Key Event 1 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              The Women’s March on Versailles
+            </h1>
+            <p class="text-[#231F20]">(October 5–6, 1789)</p>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → Frustrated by food shortages and high bread prices, Parisian
+              women marched from Paris to the Palace of Versailles.
+            </p>
+            <p>
+              → The march forced King Louis XVI and his family to return to
+              Paris.
+            </p>
+            <p>
+              → This event symbolizes the shift of power from the monarchy to
+              the revolutionaries and the beginning of the monarchy's decline.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Key Event 2 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              The Abolition of the Monarchy
+            </h1>
+            <p class="text-[#231F20]">(September 21st, 1792)</p>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → The National Convention that was elected after the fall of the
+              monarchy, declared France a republic and abolished the monarchy.
+            </p>
+            <p>
+              → King Louis XVI was deposed and imprisoned, and the French
+              monarchy was officially ended, setting the stage for the
+              establishment of the First French Republic.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Key Event 3 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              The Reign of Terror
+            </h1>
+            <p class="text-[#231F20]">(September 1793 - July 1794)</p>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → A period during the French Revolution led by Maximilien
+              Robespierre.
+            </p>
+            <p>
+              → Used extreme measures, including mass executions by guillotine
+              and imprisonment, to suppress opposition.
+            </p>
+            <p>
+              → Ended with Robespierre’s execution in July 1794, signaling a
+              shift in the revolution’s direction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Key Event 4 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              The Estates General
+            </h1>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → An assembly comprising of the clergy, nobility and the peasants.
+            </p>
+            <p>
+              → Was convened by king Louis XVI so that the three estates could
+              air their grievance and advice to the king.
+            </p>
+            <p>
+              → Failed because the first and second estates held more influence
+              than the third.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Key Event 5 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              The End of French Revolution
+            </h1>
+            <p class="text-[#231F20]">(The rise of Napoleon Era)</p>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → France's revolutionary armies, led by Napoleon and other
+              generals, achieved significant victories against foreign
+              coalitions, boosting Napoleon’s popularity as a military hero
+            </p>
+            <p>
+              → He overthrew the Directory (1795–1799) and established the
+              Consulate with the support of key political and military allies.
+            </p>
+            <p>
+              → This marked the transition from revolutionary chaos to
+              authoritarian rule.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Key Event 6 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              Storming of Bastille
+            </h1>
+            <p class="text-[#231F20]">(July 14th, 1789)</p>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → The third estate, which are commoners and lower clergy, want to
+              take control over the bastille that is a symbol of monarchy power.
+            </p>
+            <p>
+              → Successfully seized control of Bastille and become French
+              national holiday until now.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Key Event 7 -->
+      <div class="flip-card perspective w-64 h-[425px] mx-auto">
+        <div
+          class="flip-card-inner relative w-full h-full transform transition-transform duration-700 ease-in-out"
+        >
+          <!-- Front Card -->
+          <div
+            class="flip-card-front bg-[#e8d573] p-5 rounded-lg shadow-lg border border-[#231F20] flex flex-col justify-center items-center text-center absolute inset-0 backface-hidden"
+          >
+            <h1 class="text-[#231F20] font-bold text-xl mb-2">
+              The Declaration of the rights of Man and Citizens
+            </h1>
+          </div>
+          <!-- Back Card -->
+          <div
+            class="flip-card-back bg-[#eee399] p-5 rounded-lg shadow-lg border border-[#231F20] text-[#231F20] font-medium text-md flex flex-col justify-start items-start text-left space-y-2 absolute inset-0 backface-hidden transform rotateY-180"
+          >
+            <p>
+              → Adopted the declaration as the new foundation of a new
+              constitutional framework on August 26,1789.
+            </p>
+            <p>→ Inspired by the American enlightenment.</p>
+            <p>
+              → Promote equality, freedom, fair taxes and governance which seem
+              to limited king authority.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="max-w-screen-2xl mx-auto align-center m-4 bg-white rounded-lg border border-[#231F20] shadow dark:bg-gray-800"
+    >
+      <div
+        class="w-full max-w-screen-xl p-4 mx-auto md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024
+          <a href="https://flowbite.com/" class="hover:underline"
+            >Kat Jerng Squad™</a
+          >. All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Flowbite Script -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
